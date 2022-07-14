@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".fragment.mywalletfragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mw_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_dashboard_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="MY WALLET"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/mw_ll1"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/mw_ll1"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/mw_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Wallet Balance"
+                android:gravity="center"
+                android:textColor="@color/purple"
+                android:textSize="25sp"
+                android:layout_marginTop="70dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/mw_tv8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:gravity="center"
+                android:text="₹0"
+                android:textColor="@color/purple"
+                android:textSize="25sp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mw_tv1" />
+
+            <TextView
+                android:id="@+id/mw_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Status:"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/mw_tv8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/mw_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text=""
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/mw_tv2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:id="@+id/mw_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Applied on:"
+                android:visibility="gone"
+                android:textColor="@color/purple"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toBottomOf="@id/mw_tv8"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="20dp"
+                />
+
+            <TextView
+                android:id="@+id/mw_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:textColor="#3FE446"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/mw_tv4"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="20dp"
+                />
+
+
+                <Button
+                    android:id="@+id/laoninsurance_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:visibility="gone"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/mw_tv5"
+                    android:background="@drawable/homepagebtn_rounded"
+                    android:text="Money Transfer"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="16sp"
+
+                  />
+
+            <TextView
+                android:id="@+id/mw_tv512"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="20dp"
+                android:textColor="#3FE446"
+                android:textSize="20sp"
+                android:text="Reciept Status Pending..."
+                app:layout_constraintTop_toBottomOf="@id/mw_tv5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/mw_ll1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:backgroundTint="@color/blue"
+        app:cardCornerRadius="55dp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/home_ll1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:backgroundTint="@color/blue"
+            app:cardCornerRadius="50dp"
+            >
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/wallletpng"
+                android:layout_gravity="center"
+                />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

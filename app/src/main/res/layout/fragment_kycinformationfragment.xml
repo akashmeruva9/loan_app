@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple"
+    tools:context=".fragment.kycinformationfragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kyc_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="KYC INFORMATION"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/kyc_ll1"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/kyc_ll1"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+            <TextView
+                android:id="@+id/kyc_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="As per RBI Guidelines to apply for loan, Complete your KYC form."
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+
+
+            <TextView
+                android:id="@+id/kyc_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Pan is required for ID Proof."
+                android:textColor="#6B3DBD"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_tv1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/kyc_tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="(Mandatory)"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_tv1"
+                android:layout_marginTop="5dp"
+                app:layout_constraintLeft_toRightOf="@id/kyc_tv2"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kyc_cv1"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_tv3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#ECE2FD"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <EditText
+                        android:id="@+id/kyc_edit_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:maxLength="10"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/bankinfo_edittext"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="@color/purple"
+                        android:textColor="@color/purple"
+                        android:hint="Enter PAN Card Number" />
+
+                    <ImageView
+                        android:id="@+id/pan_card_img1"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/kyc_edit_1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/pancard_logo"
+                        android:background= "@drawable/bankinfo_edittext"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kyc_tv30"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="Upload Pancard front pic here"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/pan_card_img1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginTop="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/pan_card_img2"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/kyc_edit_1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:src="@drawable/pancard_logo"
+                        android:background= "@drawable/bankinfo_edittext"
+                        android:padding="10dp"
+                        android:layout_marginRight="20dp"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/kyc_tv31"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="Upload Pancard back pic here"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:layout_marginRight="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/pan_card_img1"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/kyc_tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="Aadhar Card is required for Address Proof."
+                android:textColor="#6B3DBD"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_cv1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/kyc_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="(Mandatory)"
+                android:textColor="@color/blue"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_cv1"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toRightOf="@id/kyc_tv4"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/kyc_cv2"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_tv5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="20dp"
+                android:backgroundTint="#ECE2FD"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <EditText
+                        android:id="@+id/kyc_edit_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:maxLength="12"
+                        android:inputType="number"
+                        android:background="@drawable/bankinfo_edittext"
+                        android:paddingLeft="20dp"
+                        android:textColorHint="@color/purple"
+                        android:textColor="@color/purple"
+                        android:hint="Enter Aadhar Card Number" />
+
+                    <ImageView
+                        android:id="@+id/aadhar_card_img1"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toBottomOf="@id/kyc_edit_2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:src="@drawable/pancard_logo"
+                        android:background= "@drawable/bankinfo_edittext"
+                        android:padding="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kyc_tv32"
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="Upload Aadhaar front pic here"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/aadhar_card_img1"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <ImageView
+                        android:id="@+id/aadhar_card_img2"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
+                        app:layout_constraintTop_toBottomOf="@id/kyc_edit_2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:src="@drawable/pancard_logo"
+                        android:background= "@drawable/bankinfo_edittext"
+                        android:padding="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/kyc_tv33"
+                        android:layout_width="155dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:text="Upload Aadhaar Back pic here"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:layout_marginRight="5dp"
+                        app:layout_constraintTop_toBottomOf="@id/aadhar_card_img2"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginTop="5dp"
+                        />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/kyc_cv2"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/kyc_continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="CONTINUE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="28sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

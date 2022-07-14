@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable-v24/bankinfo_edittext.xml" value="0.206" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable-v24/messages_white.xml" value="0.206" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/bankinfo_btn_bac_violet.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/bankinfo_edittext_back.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/bg_progress1.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/cardview_rounded.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/customthumb.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/cv_curved_blue.xml" value="0.2555" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/cv_curved_purple.xml" value="0.2555" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/disabled_otnbtn.xml" value="0.2545" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/homeicon.xml" value="0.1725" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/homepagebtn_rounded.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.2555" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.186" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/ic_baseline_calculate_24.xml" value="0.1725" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/messages.xml" value="0.1725" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/nav_background_curved.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/seekbar_thumb.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/selector.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/style.xml" value="0.202" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/drawable/wallet.xml" value="0.1725" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/font/baloo_bhai.xml" value="0.209375" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout-v23/fragment_home.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.1" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout-w936dp/activity_login.xml" value="0.1" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_bankinformation.xml" value="0.2" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_basicinformation.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_detail.xml" value="0.25" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_kycinformation.xml" value="0.264" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_loan_amount.xml" value="0.264" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_loanamounr.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_login.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_login_activty.xml" value="0.264" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_my_loan.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_privacy.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_repayment.xml" value="0.2047008547008547" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_splashscreen.xml" value="0.2" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_terms.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/activity_verification.xml" value="0.21052631578947367" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/dialog_after_payment.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/dialog_loanrepayment.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/dialog_loantracker.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/dialog_notifications.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_bankinfofragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_basicinfofragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_helpfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_home1.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_homefragment.xml" value="0.264" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_kycinformationfragment.xml" value="0.176" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_loanamountfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_loanamuntfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_loansplash.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_myloan.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_myloanfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_mywallet.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_profilefragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_termsfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/fragment_verificationfragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/notification.xml" value="0.25925925925925924" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/progressbar_layout.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/spinner_layout.xml" value="0.20427350427350427" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/layout/thankyouloaninsurance.xml" value="0.20512820512820512" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/menu/home_menu.xml" value="0.25" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
+        <entry key="..\:/projects/loan_app/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.121" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loan_nav"
+    app:startDestination="@id/loansplash2">
+
+    <fragment
+        android:id="@+id/bankinfofragment"
+        android:name="com.agremo.loan_app.fragment.bankinfofragment"
+        android:label="fragment_bankinfofragment"
+        tools:layout="@layout/fragment_bankinfofragment" >
+        <action
+            android:id="@+id/action_bankinfofragment_to_basicinfofragment"
+            app:destination="@id/basicinfofragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/basicinfofragment"
+        android:name="com.agremo.loan_app.fragment.basicinfofragment"
+        android:label="fragment_basicinfofragment"
+        tools:layout="@layout/fragment_basicinfofragment" >
+        <action
+            android:id="@+id/action_basicinfofragment_to_kycinformationfragment"
+            app:destination="@id/kycinformationfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/kycinformationfragment"
+        android:name="com.agremo.loan_app.fragment.kycinformationfragment"
+        android:label="fragment_kycinformationfragment"
+        tools:layout="@layout/fragment_kycinformationfragment" >
+        <action
+            android:id="@+id/action_kycinformationfragment_to_myloanfragment"
+            app:destination="@id/myloanfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myloanfragment"
+        android:name="com.agremo.loan_app.fragment.myloanfragment"
+        android:label="fragment_myloanfragment"
+        tools:layout="@layout/fragment_myloanfragment" />
+    <fragment
+        android:id="@+id/loansplash2"
+        android:name="com.agremo.loan_app.fragment.loansplash"
+        android:label="fragment_loansplash"
+        tools:layout="@layout/fragment_loansplash" >
+        <action
+            android:id="@+id/action_loansplash2_to_loanamountfragment"
+            app:destination="@id/loanamountfragment" />
+        <action
+            android:id="@+id/action_loansplash2_to_bankinfofragment"
+            app:destination="@id/bankinfofragment" />
+        <action
+            android:id="@+id/action_loansplash2_to_basicinfofragment"
+            app:destination="@id/basicinfofragment" />
+        <action
+            android:id="@+id/action_loansplash2_to_kycinformationfragment"
+            app:destination="@id/kycinformationfragment" />
+        <action
+            android:id="@+id/action_loansplash2_to_myloanfragment"
+            app:destination="@id/myloanfragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanamountfragment"
+        android:name="com.agremo.loan_app.fragment.loanamountfragment"
+        android:label="fragment_loanamuntfragment"
+        tools:layout="@layout/fragment_loanamuntfragment" >
+        <action
+            android:id="@+id/action_loanamountfragment_to_bankinfofragment"
+            app:destination="@id/bankinfofragment" />
+    </fragment>
+</navigation>

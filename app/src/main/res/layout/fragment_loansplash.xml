@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.loansplash">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bai_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_dashboard_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="My Loan"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bai_ll1"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bai_ll1"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+            <TextView
+                android:id="@+id/sla_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="50dp"
+                android:text="You application is incomplete"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+            android:id="@+id/sla_tv2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:layout_marginTop="20dp"
+            android:text="Please Select an option"
+            android:textColor="#2196F3"
+            android:textSize="25sp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            />
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv2"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/loansplash_continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="Yes, i want to continue"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="16sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/btn_1"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+                <Button
+                    android:id="@+id/loan_start_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="no, i want to start from begining"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="15sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/loading_pg_bar123"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

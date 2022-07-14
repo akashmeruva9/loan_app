@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/homeicon"/>
+
+    <item android:id="@+id/howitworks"
+        android:title="Wallet"
+        android:icon="@drawable/wallet"/>
+
+
+    <item android:id="@+id/help"
+        android:title="Help"
+        android:icon="@drawable/messages"/>
+
+    <item android:id="@+id/profile"
+        android:title="FAQs"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+
+
+</menu>

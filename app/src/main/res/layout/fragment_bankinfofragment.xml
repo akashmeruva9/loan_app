@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple"
+    android:layout_height="match_parent"
+    tools:context=".fragment.bankinfofragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bankinfo_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="BANK INFORMATION"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bankinfo_ll1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bankinfo_ll1"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:id="@+id/bankinfo_tv1"
+                android:layout_width="match_parent"
+                android:background="@drawable/bankinfo_logo_img"
+                android:layout_height="120dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                />
+
+            <TextView
+                android:id="@+id/bankinfo_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_tv1"
+                android:layout_marginTop="10dp"
+                android:text="When We are transfering loan amount methods through Net banking such as IMPS, Please fill up the necessary YOUR BANK DETAILS."
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <EditText
+                android:id="@+id/bankinfo_edittext_et1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_tv2"
+                android:layout_marginTop="30dp"
+                android:inputType="number"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2A164C"
+                android:textColorHint="#2A164C"
+                android:hint="ACCOUNT NUMBER"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/bankinfo_edittext_et2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_edittext_et1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2A164C"
+                android:textColorHint="#2A164C"
+                android:hint="BANK NAME"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/bankinfo_edittext_et3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_edittext_et2"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2A164C"
+                android:textColorHint="#2A164C"
+                android:hint= "BRANCH ADDRESS"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:id="@+id/bankinfo_edittext_et4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_edittext_et3"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textColor="#2A164C"
+                android:textColorHint="#2A164C"
+                android:hint="IFSC CODE"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="63dp"
+                app:layout_constraintTop_toBottomOf="@id/bankinfo_edittext_et4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/bankinfo_continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="CONTINUE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="28sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

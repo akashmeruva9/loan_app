@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".activity.LoginActivty">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/splashlogo2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@drawable/applogo" />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/splashlogo2"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/splashlogo2"
+        android:layout_marginTop="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+
+
+    <TextView
+        android:id="@+id/loginscreen_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Enter Your Phone Number"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                app:layout_constraintTop_toBottomOf="@id/loginscreen_tv1"
+                android:layout_marginTop="22dp"
+                android:layout_marginLeft="-15dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                />
+
+
+     <EditText
+         android:id="@+id/number123"
+         android:layout_width="250dp"
+         android:layout_height="50dp"
+         app:layout_constraintTop_toBottomOf="@id/loginscreen_tv1"
+         android:layout_marginTop="20dp"
+         app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintLeft_toRightOf="@id/ccp"
+         android:layout_marginLeft="-40dp"
+         android:hint="Phone Number"
+         android:inputType="number"
+         android:textColorHint="#6C6B6B"
+         android:textColor="@color/black"
+         android:autofillHints = "true" />
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/getotp_button"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="50dp"
+                app:layout_constraintTop_toBottomOf="@id/number123"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+                <Button
+                    android:id="@+id/getotp_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:text= "Get OTP"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="28sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/otpcl"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="50dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/getotp_button"
+                app:layout_constraintVertical_bias="0.48"
+                tools:layout_editor_absoluteX="0dp">
+
+                <TextView
+                    android:id="@+id/loginscreen_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Enter OTP"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <in.aabhasjindal.otptextview.OtpTextView
+                    android:id="@+id/otp_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    app:bar_enabled="true"
+                    app:bar_height="2dp"
+                    app:height="40dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/loginscreen_tv2"
+                    app:length="6"
+                    app:otp_text_size="24dp"
+                    app:width="40dp" />
+
+                <LinearLayout
+                    android:id="@+id/login_ll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/otp_view"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/loginscreen_tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Auto-detecting OTP"
+                        android:textColor="@color/black"
+                        app:layout_constraintRight_toLeftOf="@id/pgbar" />
+
+                    <ProgressBar
+                        android:id="@+id/pgbar"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/login_ll1"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    >
+
+                    <TextView
+                        android:id="@+id/loginscreen_tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:text="Didn't get OTP?"
+                        android:textColor="@color/black"
+                        app:layout_constraintRight_toLeftOf="@id/clickhere_btn"
+                        app:layout_constraintTop_toBottomOf="@id/login_ll1" />
+
+                    <Button
+                        android:id="@+id/clickhere_btn"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/bankinfo_btn_bac_violet"
+                        android:gravity="center"
+                        android:text="Click here"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/countdown"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/login_ll1" />
+
+                </LinearLayout>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

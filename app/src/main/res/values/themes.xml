@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Loan_app" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/purple</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+
+    <style name="cut_corner">
+        <item name="cornerSize">10dp</item>
+    </style>
+
+    <style name="cut_corner1">
+        <item name="cornerSize">30dp</item>
+    </style>
+</resources>

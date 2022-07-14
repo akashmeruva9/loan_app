@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".fragment.loanamountfragment">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sla_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_new_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="Select Loan Amount"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/sla_ll1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/sla_ll1"
+        android:layout_marginTop="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/sla_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="10dp"
+                android:text="Request a specific amount"
+                android:textColor="#2196F3"
+                android:textSize="25sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="How much do u want to borrow and for how long?"
+                android:textColor="@color/purple"
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="5dp"
+                android:text="SELECT BORROWED AMOUNT"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv4"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="10dp"
+                android:text="₹50,000"
+                android:paddingLeft="10dp"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/bankinfo_edittext_back"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <SeekBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:progressDrawable="@drawable/seekbar_thumb"
+                android:thumb="@drawable/customthumb"
+                android:progress="0"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+            <TextView
+                android:id="@+id/sla_tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text= "₹50,000"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/progressBar1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text=" ₹5,00,000"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/progressBar1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="20dp"
+                />
+
+
+            <TextView
+                android:id="@+id/sla_tv7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="10dp"
+                android:text="REPAYMENT PERIOD"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv6"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv8"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/baloo_bhai"
+                android:layout_marginTop="10dp"
+                android:text="3 MONTHS"
+                android:paddingLeft="10dp"
+                android:textColor="#2196F3"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:background="@drawable/bankinfo_edittext_back"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv7"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <SeekBar
+                android:id="@+id/progressBar2"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/seekbar_thumb"
+                android:thumb="@drawable/customthumb"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv8"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+            <TextView
+                android:id="@+id/sla_tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text= "3 MONTHS"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/progressBar2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:id="@+id/sla_tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo_bhai"
+                android:text="36 MONTHS"
+                android:textColor="@color/purple"
+                android:textSize="14sp"
+                app:layout_constraintTop_toBottomOf="@id/progressBar2"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="20dp"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/expectedemi_cv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/rateofintrest_cv"
+                android:background="@drawable/bankinfo_edittext_back"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="EXPECTED \n EMI"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sla_cv1"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#03A9F4"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/emi_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:gravity="center"
+                        android:text="₹3,390"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/rateofintrest_cv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintLeft_toRightOf="@id/expectedemi_cv"
+                app:layout_constraintRight_toLeftOf="@id/totalpayable_cv"
+                android:background="@drawable/bankinfo_edittext_back"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="RATE OF \n INTEREST"
+                    android:gravity="center"
+                    android:textSize="12sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sla_cv2"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#03A9F4"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="10% pa"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:fontFamily="@font/baloo_bhai"
+                        />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/totalpayable_cv"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintTop_toBottomOf="@id/sla_tv10"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/rateofintrest_cv"
+                android:background="@drawable/bankinfo_edittext_back"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="TOTAL \n PAYABLE"
+                    android:gravity="center"
+                    android:textSize="11sp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:textColor="@color/purple"
+                    android:textStyle="bold"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sla_cv3"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:backgroundTint="#03A9F4"
+                    app:cardCornerRadius="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                    <TextView
+                        android:id="@+id/totalamount_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="27dp"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:gravity="center"
+                        android:text="₹10,170"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/rateofintrest_cv"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#03A9F4"
+                app:cardCornerRadius="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/loan_continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="CONTINUE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="28sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

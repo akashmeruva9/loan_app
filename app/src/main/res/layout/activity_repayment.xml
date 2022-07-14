@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".activity.repayment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myloan_ll1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/mediumlightpurple"
+                app:cardCornerRadius="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="10dp"
+                >
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/ic_baseline_dashboard_24"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:gravity="center_vertical"
+                    android:text="LOAN INSURANCE"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/myloan_ll1"
+                android:layout_marginTop="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="50dp"
+                android:foreground="@color/mediumlightpurple"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/myloan_ll1"
+                android:layout_marginTop="75dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="50dp"
+                android:layout_marginBottom="-50dp"
+                android:background="@color/white">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ver_cv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="90dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:backgroundTint="@color/purple"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+                        <TextView
+                            android:id="@+id/ver_tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/baloo_bhai"
+                            android:text=""
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginTop="60dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="@color/blue"
+                            />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="105dp"
+                            android:layout_marginTop="65dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            app:cardCornerRadius="20dp"
+                            android:backgroundTint="@color/white"
+                            >
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/amountlogo"
+                                />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="This amount is File charge. Once File charge paid , you can withdraw transanction amount"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <TextView
+                        android:id="@+id/ver_tv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ver_cv1"
+                        android:layout_marginTop="20dp"
+                        android:text="This Bank Details :"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/purple"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:textSize="20sp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/ver_cv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintTop_toBottomOf="@id/ver_tv2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:background="@drawable/cv_curved_purple"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                        <TextView
+                            android:id="@+id/ver_tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@id/ver_img1"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical|right"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/baloo_bhai"
+                            android:gravity="center"
+                            android:text="Loan Express"
+                            android:textColor="@color/white"
+                            android:textSize="20sp" />
+
+                        <ImageView
+                            android:id="@+id/ver_img1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/applogo" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ver_cv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/ver_cv2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:background="@drawable/cv_curved_blue"
+                        app:cardCornerRadius="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/white"
+                            >
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="BANK :"
+                                android:textSize="18sp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                            <TextView
+                                android:id="@+id/ver_bankname"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="right"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/white"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Acc No. :"
+                                android:textSize="18sp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                            <TextView
+                                android:id="@+id/ver_accno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="right"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/white"
+                            >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:fontFamily="@font/baloo_bhai"
+                                android:gravity="center_vertical"
+                                android:text="UPI ID"
+                                android:textColor="@color/purple"
+                                android:textSize="18sp" />
+                            <TextView
+                                android:id="@+id/ver_branch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="right"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/white"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="IFSC :"
+                                android:textSize="18sp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                            <TextView
+                                android:id="@+id/ver_ifsc"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="right"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="10dp"
+                            android:backgroundTint="@color/white"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text="Paytm/Gpay :"
+                                android:textSize="18sp"
+                                android:gravity="center_vertical"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                            <TextView
+                                android:id="@+id/ver_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="70dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_gravity="right"
+                                android:text=""
+                                android:gravity="center_vertical"
+                                android:textSize="18sp"
+                                android:textColor="@color/purple"
+                                android:fontFamily="@font/baloo_bhai"
+                                />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/ver_cv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:layout_constraintTop_toBottomOf="@id/ver_cv3"
+                        android:layout_marginTop="70dp"
+                        android:background="@drawable/bankinfo_edittext_back"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        >
+
+                    <TextView
+                        android:id="@+id/ver_tv5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/baloo_bhai"
+                        android:gravity="center"
+                        android:text="Please Provide an Image of Payment Reciept or Screenshot"
+                        android:textColor="@color/purple"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/reciept_image"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/pancard_logo" />
+
+                    </RelativeLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv489"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:layout_constraintTop_toBottomOf="@id/ver_cv4"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginBottom="80dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:backgroundTint="@color/blue"
+                        app:cardCornerRadius="20dp"
+                        >
+
+
+                        <Button
+                            android:id="@+id/money_transfer_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:text="Money Transfer"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/baloo_bhai"
+                            android:textSize="28sp"
+                            android:background="@drawable/bankinfo_btn_bac_violet"
+                            />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        app:layout_constraintTop_toBottomOf="@id/cv489"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/myloan_ll1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="55dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/myloan_ll1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:backgroundTint="@color/blue"
+                    app:cardCornerRadius="50dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_logo"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/purple"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.basicinfofragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bai_ll1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/mediumlightpurple"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/ic_baseline_dashboard_24"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/baloo_bhai"
+            android:gravity="center_vertical"
+            android:text="BASIC INFORMATION"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bai_ll1"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:foreground="@color/mediumlightpurple"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/bai_ll1"
+        android:layout_marginTop="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="50dp"
+        android:layout_marginBottom="-50dp"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bai_cv1"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="50dp"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="center"
+                    app:layout_constraintTop_toBottomOf="@id/home_ll1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:backgroundTint="@color/blue"
+                    app:cardCornerRadius="45dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/addprofile_img"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/profile"
+                        />
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <EditText
+                android:id="@+id/bai_et1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_cv1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Name"
+                />
+
+
+            <TextView
+                android:id="@+id/bai_et2"
+                android:layout_width= "wrap_content"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_et1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Date Of Birth"
+                android:paddingRight="20dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_malefemale"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_et1"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/bai_et4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/spinner_malefemale"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Email Address"
+                />
+
+            <TextView
+                android:id="@+id/bai_tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="State*"
+                app:layout_constraintTop_toBottomOf="@id/bai_et4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_states"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_tv1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/bai_tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="District*"
+                app:layout_constraintTop_toBottomOf="@id/spinner_states"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+            <Spinner
+                android:id="@+id/spinner_districts"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_tv2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"/>
+
+
+
+            <EditText
+                android:id="@+id/bai_et8"
+                android:layout_width= "150dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/spinner_districts"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="City"
+                android:textSize="16sp"
+                android:paddingRight="20dp"
+                />
+            <EditText
+                android:id="@+id/bai_et9"
+                android:layout_width= "150dp"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/spinner_districts"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="number"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Pincode"
+                android:paddingRight="20dp"
+                />
+
+            <EditText
+                android:id="@+id/bai_et5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_et9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bankinfo_edittext_back"
+                android:paddingLeft="20dp"
+                android:textSize="16sp"
+                android:textColorHint="@color/purple"
+                android:textColor="@color/purple"
+                android:hint="Street Address"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:layout_constraintTop_toBottomOf="@id/bai_et5"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="@color/blue"
+                app:cardCornerRadius="20dp"
+                >
+
+
+                <Button
+                    android:id="@+id/basicinfo_continue_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:text="CONTINUE"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/baloo_bhai"
+                    android:textSize="28sp"
+                    android:background="@drawable/bankinfo_btn_bac_violet"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
