@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "1051191340898",
-    "firebase_url": "https://loan-app-a4f09-default-rtdb.firebaseio.com",
-    "project_id": "loan-app-a4f09",
-    "storage_bucket": "loan-app-a4f09.appspot.com"
+    "project_number": "961264490817",
+    "firebase_url": "https://loan-express-5e600-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "loan-express-5e600",
+    "storage_bucket": "loan-express-5e600.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1051191340898:android:9eac3c135778c3a673863b",
+        "mobilesdk_app_id": "1:961264490817:android:6ccfe61252fbac595769c0",
         "android_client_info": {
           "package_name": "com.agremo.loan_app"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1051191340898-3963b42tp13r86cghe32st3nogl226ku.apps.googleusercontent.com",
+          "client_id": "961264490817-n4rfm32sbi1o3fsj102t25to8kms7b5b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.agremo.loan_app",
+            "certificate_hash": "9381a6b61871c0df4c6afa2e71c04d3861b3a63e"
+          }
+        },
+        {
+          "client_id": "961264490817-c8klj3hjfceohsipfadvsi763h2nj7hn.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDfPfNnHPNLpGjogzZ0wuOme2kBmG0XWf0"
+          "current_key": "AIzaSyDS0_zABXJdVF2eZG_IdsbbJxVAj4S9Evw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1051191340898-3963b42tp13r86cghe32st3nogl226ku.apps.googleusercontent.com",
+              "client_id": "961264490817-c8klj3hjfceohsipfadvsi763h2nj7hn.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
